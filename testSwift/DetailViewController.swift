@@ -62,6 +62,16 @@ class DetailViewController: UIViewController, UISplitViewControllerDelegate {
         // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
         return true
     }
+    @IBAction func touchDown(sender: UISwitch) {
+        println("here")
+        if(sender.on){
+            let alert = UIAlertView()
+            alert.title = "switch"
+            alert.message = "switch on!"
+            alert.addButtonWithTitle("OK")
+            alert.show()
+        }
+    }
 
 }
 
